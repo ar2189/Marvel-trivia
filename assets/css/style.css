@@ -18,8 +18,44 @@ body {
 .container {
     width: 800px;
     max-width: 80%;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: blueviolet;
+    color: antiquewhite;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.start-btn, .next-btn {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }
